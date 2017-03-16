@@ -24,7 +24,7 @@ class StdOutListener(StreamListener):
         return True
         
     def on_error(self, status):
-        #print error
+        #menampilkan error
         print status
 
 if __name__ == '__main__':

@@ -3,10 +3,10 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 import json
 
-access_token = ""
-access_token_secret = ""
-consumer_key = ""
-consumer_secret = ""
+access_token = "841593479591473153-9eu1EoRkEo4jtUD4A5ljH6duwXpLFdb"
+access_token_secret = "rq0IfvYm45Yev814JNYHNGatvMq88uYdIFgH9vADAiGZa"
+consumer_key = "EEPcL9tQoKbBmOYb2CdYdrFiP"
+consumer_secret = "76BEv6UZOiILkualRCWLY1kv8bHMaHpGEHl2QD2tEGSH49VevP"
 
 # Defining listener class for getting the streaming
 class StdOutListener(StreamListener):
@@ -39,5 +39,3 @@ if __name__ == '__main__':
     collection = db.test_collection 
     #This line filter Twitter Streams to capture data by the keywords: 'India'
     stream.filter(track=['jokowi'])
-
-    

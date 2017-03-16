@@ -35,11 +35,11 @@ if __name__ == '__main__':
     stream = Stream(auth, l) #create kanal untuk streaming data
 
     # Below code  is for making connection with mongoDB
-    from pymongo import MongoClient  
-    client = MongoClient() #definisi object mongoclient
-    client = MongoClient('localhost', 27017) #
-    db = client.test_database
-    collection = db.test_collection 
+    from pymongo import MongoClient 
+    #definisi object mongoclient untuk dikoneksikan kedalam localhost, port 27017
+    client = MongoClient('localhost', 27017)
+    db = client.test_database #create database dengan nama test_database
+    collection = db.test_collection #create collection dengan nama test_collection
     
-    #This line filter Twitter Streams to capture data by the keywords: 'India'
+    #This line filter Twitter Streams to capture data by the keywords: 'jokowi'
     stream.filter(track=['jokowi'])
